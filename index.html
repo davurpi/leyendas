@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leyendas</title>
+<meta name="description" content="Leyendas: mitos y héroes de la historia. Juego de aventuras en 3D: Hércules, Teseo y muchos más.">
+<link rel="icon" href="icono.png">
+<style>
+  :root {
+    --fondo: #0b1330;
+    --fondo2: #14255a;
+    --oro: #e8b54a;
+    --oro2: #b8862e;
+    --texto: #f3ecdc;
+    --suave: #b9c3dd;
+    --rojo: #b3261e;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    min-height: 100vh;
+    background: radial-gradient(ellipse at 50% 0%, var(--fondo2), var(--fondo) 70%);
+    color: var(--texto);
+    font-family: Georgia, "Times New Roman", serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px 16px 48px;
+  }
+  .greca {
+    width: 100%;
+    max-width: 760px;
+    height: 14px;
+    background:
+      repeating-linear-gradient(90deg, var(--oro) 0 4px, transparent 4px 16px),
+      linear-gradient(var(--oro), var(--oro)) top / 100% 3px no-repeat,
+      linear-gradient(var(--oro), var(--oro)) bottom / 100% 3px no-repeat;
+    opacity: 0.7;
+  }
+  header { text-align: center; margin: 18px 0 8px; }
+  header img { width: 110px; height: 110px; }
+  h1 {
+    font-size: clamp(42px, 9vw, 76px);
+    letter-spacing: 0.08em;
+    margin: 8px 0 0;
+    color: var(--oro);
+    text-shadow: 0 3px 0 #000a;
+  }
+  .sub { color: var(--suave); font-size: 20px; margin: 4px 0 0; font-style: italic; }
+  main { width: 100%; max-width: 760px; margin-top: 26px; }
+  .jugar {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background: linear-gradient(180deg, var(--oro), var(--oro2));
+    color: #1b1206;
+    font-size: 26px;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 14px;
+    box-shadow: 0 6px 0 #6b4c16, 0 12px 30px #0008;
+  }
+  .jugar small { display: block; font-size: 15px; font-weight: normal; margin-top: 4px; }
+  .jugar:hover { filter: brightness(1.08); }
+  .descargas {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 18px;
+  }
+  @media (max-width: 560px) { .descargas { grid-template-columns: 1fr; } }
+  .caja {
+    display: block;
+    text-decoration: none;
+    color: var(--texto);
+    background: #ffffff10;
+    border: 2px solid #e8b54a66;
+    border-radius: 12px;
+    padding: 16px 18px;
+  }
+  .caja.ancha { grid-column: 1 / -1; }
+  .caja span b.mini { font-size: inherit; color: var(--texto); }
+  .caja:hover { border-color: var(--oro); background: #ffffff18; }
+  .caja b { color: var(--oro); font-size: 20px; }
+  .caja span { display: block; color: var(--suave); font-size: 14px; margin-top: 6px; line-height: 1.4; }
+  h2 { color: var(--oro); font-size: 24px; margin: 34px 0 10px; }
+  ol.caps { padding-left: 22px; margin: 0; line-height: 1.7; }
+  ol.caps li b { color: var(--texto); }
+  ol.caps li span { color: var(--suave); }
+  table { width: 100%; border-collapse: collapse; font-size: 15px; }
+  td { padding: 7px 8px; border-bottom: 1px solid #ffffff1a; vertical-align: top; }
+  td:first-child { color: var(--oro); white-space: nowrap; }
+  .nota { color: var(--suave); font-size: 14px; line-height: 1.5; }
+  footer { margin-top: 40px; color: #8793b5; font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+  <div class="greca"></div>
+  <header>
+    <img src="icono.png" alt="">
+    <h1>LEYENDAS</h1>
+    <p class="sub">Mitos y héroes de la historia</p>
+  </header>
+
+  <main>
+    <a class="jugar" href="jugar/">
+      Jugar en el navegador
+      <small>Ordenador, tablet o móvil · No hace falta instalar nada</small>
+    </a>
+
+    <div class="descargas">
+      <a class="caja ancha" href="jugar/">
+        <b>Instalar en iPhone o iPad</b>
+        <span>1. Abre este enlace en <b class="mini">Safari</b> y pulsa «Jugar en el navegador».<br>
+        2. Toca el botón <b class="mini">Compartir</b> (el cuadrado con la flecha hacia arriba).<br>
+        3. Elige «Añadir a pantalla de inicio» y pulsa «Añadir».</span>
+      </a>
+    </div>
+
+    <h2>💪 Hércules: los trabajos del héroe más fuerte</h2>
+    <ol class="caps">
+      <li><b>El León de Nemea</b> <span>· su piel es irrompible: ¡agárralo y gana el forcejeo!</span></li>
+      <li><b>La Hidra de Lerna</b> <span>· corta una cabeza y salen dos... quema los cuellos</span></li>
+      <li><b>El Jabalí de Erimanto</b> <span>· persíguelo por la nieve y atrápalo vivo</span></li>
+      <li><b>Los establos de Augías</b> <span>· 30 años sin limpiar: desvía los ríos</span></li>
+      <li><b>Cerbero</b> <span>· el perro de tres cabezas, sin armas</span></li>
+    </ol>
+
+    <h2>🐂 Teseo y el Minotauro</h2>
+    <ol class="caps">
+      <li><b>Rumbo a Creta</b> <span>· la promesa de las velas y los guardias del rey Minos</span></li>
+      <li><b>El Laberinto</b> <span>· nadie ha salido jamás... pero tienes el hilo de Ariadna</span></li>
+      <li><b>El Minotauro</b> <span>· hazle chocar contra las columnas</span></li>
+    </ol>
+
+    <h2>Muy pronto</h2>
+    <ul class="caps" style="list-style:disc">
+      <li><b>Perseo</b> <span>· Medusa, Pegaso y el Kraken</span></li>
+      <li><b>Thor</b> <span>· el martillo, los gigantes de hielo y el Ragnarök</span></li>
+      <li><b>Egipto</b> <span>· Horus, Osiris y el malvado Set</span></li>
+    </ul>
+
+    <h2>Multijugador</h2>
+    <ul class="caps" style="list-style:disc">
+      <li><b>Online</b> <span>· elige un capítulo, pulsa «Online» y te sale un código de 4 letras. Tu amigo lo escribe en «MULTIJUGADOR → Unirse» desde su ordenador o móvil.</span></li>
+      <li><b>En el mismo ordenador</b> <span>· activa «2 jugadores (mando)» y tu amigo juega con un mando.</span></li>
+    </ul>
+
+    <h2>Controles</h2>
+    <table>
+      <tr><td>Ordenador</td><td>WASD moverse · ratón cámara · clic izquierdo atacar · clic derecho arco (mantén para apuntar) · Shift voltereta · E usar / agarrar · Esc pausa</td></tr>
+      <tr><td>Móvil / tablet</td><td>Joystick a la izquierda · arrastra el dedo a la derecha para mover la cámara · botones en pantalla. Mejor en horizontal.</td></tr>
+      <tr><td>Mando</td><td>Stick izquierdo moverse · stick derecho cámara · X atacar · R1 arco · B voltereta · A usar</td></tr>
+    </table>
+
+    <p class="nota">La partida se guarda sola en tu navegador. La primera vez tarda un poco en cargar. El juego no recoge ningún dato personal.</p>
+  </main>
+
+  <div class="greca" style="margin-top:36px"></div>
+  <footer>Hecho con Godot</footer>
+</body>
+</html>
