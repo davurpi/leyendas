@@ -4,7 +4,7 @@
 // Incrementing CACHE_VERSION will kick off the install event and force
 // previously cached resources to be updated from the network.
 /** @type {string} */
-const CACHE_VERSION = '1790988598|18175795';
+const CACHE_VERSION = '1791318313|6440631';
 /** @type {string} */
 const CACHE_PREFIX = 'Leyendas-sw-cache-';
 const CACHE_NAME = CACHE_PREFIX + CACHE_VERSION;
